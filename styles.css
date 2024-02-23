@@ -14,11 +14,26 @@ body {
   color: #333;
   line-height: 1.5;
   height: 100vh;
+  overflow: hidden;
   position: relative;
   display: flex;
   align-items: flex-start;
   justify-content: center;
   background: linear-gradient(to top left, #28b487, #7dd56f);
+}
+
+.btns-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 25px;
+}
+
+@media screen and (max-width:750px) {
+  .btns-container{
+    flex-direction: column;
+  }
 }
 
 .show-modal {
@@ -42,6 +57,11 @@ body {
   cursor: pointer;
   border: none;
   background: none;
+  width: 20%;
+}
+
+.title {
+  width: 75%;
 }
 
 h1 {
@@ -65,12 +85,14 @@ p {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 70%;
-
+  overflow-x: hidden;
+  overflow-y: scroll;
   background-color: white;
-  padding: 6rem;
+  padding: 3rem;
   border-radius: 5px;
   box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
   z-index: 10;
+  height: 80vh;
 }
 
 .overlay {
