@@ -58,6 +58,8 @@ body {
   border: none;
   background: none;
   width: 20%;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .title {
